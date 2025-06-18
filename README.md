@@ -41,6 +41,7 @@ npm create vite@latest
 npm install
 npm run dev
 
+```
 ---
 
 ## Version 1.0

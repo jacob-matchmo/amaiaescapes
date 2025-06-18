@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1d3461;
+   font-family: "Montserrat", sans-serif;
+}
+
+.crop-bottom {
+  width: 100%;
+  height: 321px;
+
+  overflow: hidden;
+  position: relative; /* so text inside can be absolutely positioned */
+}
+
+
+
+#amaia-bg {
+  position: relative;
+  top: -100px; /* adjust this to control crop */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  filter: brightness(2);
+  filter
+}
+
+.image-text {
+  position: absolute;
+  font-family: "Montserrat", Times, serif;
+
+  top: 50%; /* vertical center */
+  left: 406px; /* horizontal center */
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+  z-index: 1;
+}
+
+.montserrat-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.header1-text {
+  color: #1d3461;
+  font-weight: 800;
+  font-size: 57.24px;
+}
+
+.header2-text {
+  color: #007366;
+  margin-top: 7px;
+  letter-spacing: 10px;
+  font-weight: 800;
+  font-size: 39.77px;
+}
+
+.image-filter-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1441px;
+  height: auto;
+}
+
+.image-filter-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.white-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  opacity: 0.6; /* lower = more image shows, higher = more white */
+ 
+}
+
+
+
+.property-card {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  margin-top: 24px;
+  border-radius: 100px
+  overflow: hidden;
+}
+
+.property-details table {
+  background-color: #FFFFFF;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prop-details {
+  background-color: #FFFFFF;
+}
+
+.view-button {
+  background-color: #FFB20C;
+  border-radius: 20px;
+  font-weight: 700px;
+}
+
+.prop-button {
+  background-color: #007E66;
+  color: #FFFFFF;
+
+}
+
+a {
+  color: white;
+  text-decoration: none; /* Optional: removes underline */
+}
+
+.avail-text {
+  color: #007366;
+}

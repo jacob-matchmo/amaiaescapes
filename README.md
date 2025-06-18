@@ -1,12 +1,43 @@
-# React + Vite
+# Amaia Escapes React App – OJT Training
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created as part of the **OJT training** for building the **Amaia Escapes React App**.
 
-Currently, two official plugins are available:
+It uses **React** and **Vite** to implement a fast and modern frontend with hot module replacement (HMR), making development quick and efficient.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Frontend library for building user interfaces.
+- **Vite** – Next-generation frontend tooling for fast builds and instant reloads.
+- **ESLint** – For code linting and formatting.
+- **Babel or SWC** – Used via Vite plugins for fast refresh.
+
+---
+
+## 📦 Vite Plugins Used
+
+You can choose from the following official Vite plugins:
+
+- [`@vitejs/plugin-react`](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) – Uses Babel for Fast Refresh.
+- [`@vitejs/plugin-react-swc`](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) – Uses SWC for Fast Refresh.
+
+---
+
+## 🔍 ESLint Configuration
+
+If you plan to grow this into a full production application, it’s recommended to use **TypeScript** and enable **type-aware lint rules**.
+
+For more advanced setup:
+
+- Check out the [React + TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts)
+- Learn more about [`typescript-eslint`](https://typescript-eslint.io)
+
+---
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
+```

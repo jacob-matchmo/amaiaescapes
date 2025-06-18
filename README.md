@@ -37,5 +37,15 @@ For more advanced setup:
 ## 🚀 Getting Started
 
 ```bash
+npm create vite@latest
 npm install
 npm run dev
+
+---
+
+## Version 1.0
+
+![App Preview](./public/web-v1.0.png)
+
+A preview of the initial design is added. Still not responsive when zoomed in or out.
+Purely a web design layout, no functionalities yet.

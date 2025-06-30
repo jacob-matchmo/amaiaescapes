@@ -5,6 +5,33 @@ import viteLogo from "/vite.svg";
 import amaia from "./assets/amaia.jpg";
 import "./App.css";
 
+const idk = [
+  {
+    id: 1,
+    name: "James",
+    age: 21,
+    food: "drink",
+  },
+  {
+    id: 2,
+    name: "Jessie",
+    age: 21,
+    food: "drink",
+  },
+  {
+    id: 3,
+    name: "Brock",
+    age: 21,
+    food: "drink",
+  },
+  {
+    id: 4,
+    name: "Misty",
+    age: 21,
+    food: "drink",
+  },
+];
+
 const propDetails = [
   {
     index: 1,
@@ -38,10 +65,17 @@ const propDetails = [
 ];
 
 function App() {
+  const [set, Updat] = useState(0);
+  const fn = () => {
+    Updat(set + 12);
+  };
   return (
     <>
       <HeaderSec />
       <PropCard />
+      <Dorman />
+      <SeparateCounter />
+      <CombinedCounter count={set} onClick={fn} />
     </>
   );
 }
@@ -64,6 +98,39 @@ const HeaderSec = () => {
       </header>
     </>
   );
+};
+
+const Dorman = () => {
+  const [count, setCount] = useState(0);
+
+  const idek = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <>
+      {idk.map((idkk) => (
+        <div key={idkk.id}>
+          <h1>{idkk.name}</h1>
+          <button onClick={idek}>{count}</button>
+        </div>
+      ))}
+    </>
+  );
+};
+
+const SeparateCounter = () => {
+  const [updat, setUpdat] = useState(0);
+
+  function handler() {
+    setUpdat(updat + 2);
+  }
+
+  return <button onClick={handler}>{updat}</button>;
+};
+
+const CombinedCounter = ({ count, onClick }) => {
+  return <button onClick={onClick}>Breh{count}</button>;
 };
 
 const PropCard = () => {
@@ -101,7 +168,13 @@ const PropCard = () => {
                 <span className="map-text">View Property Map</span>
               </a>
 
-              <button className="view-button">View Property Details</button>
+              <button
+                title="Why hover"
+                onClick={() => alert("Do not click")}
+                className="view-button"
+              >
+                View Property Details
+              </button>
             </div>
           </div>
         </div>
